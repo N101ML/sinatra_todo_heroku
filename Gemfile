@@ -1,8 +1,12 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'erubis'
-gem 'sinatra'
-gem 'sinatra-contrib'
-gem 'webrick'
+gem "sinatra"
+gem "sinatra-contrib"
+gem "erubis"
+gem "webrick"
 
-ruby '3.2.2'
+ruby "3.2.2"
+
+group :production do 
+  gem "puma"
+end
