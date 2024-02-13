@@ -216,3 +216,11 @@ post '/lists/:list_id/complete_all' do
   
   redirect "/lists/#{@list_id}"
 end
+
+def disconnect
+  @db.close
+end
+
+after do
+  @storage.disconnect
+end
