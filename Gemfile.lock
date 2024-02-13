@@ -7,6 +7,7 @@ GEM
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.0)
+    pg (1.5.4)
     puma (6.4.2)
       nio4r (~> 2.0)
     rack (2.2.8)
@@ -34,6 +35,7 @@ PLATFORMS
 
 DEPENDENCIES
   erubis
+  pg
   puma
   sinatra
   sinatra-contrib
